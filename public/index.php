@@ -3,7 +3,8 @@
 require "../bootstrap.php";
 use core\Controller;
 use core\Method;
- 
+use core\Parameters; 
+
 try {
 
     $controller = new Controller; 
@@ -11,9 +12,13 @@ try {
     
     $method = new Method;
     $method = $method->load($controller);
-  
-    print_r($method);
 
+    $parameters = new Parameters;
+    $parameters = $parameters->load();
+  
+    //SomeController->index($parameters);
+    $controller->$method($parameters);
+ 
 }catch(\Exception $e){
     echo $e->getMessage();
 }

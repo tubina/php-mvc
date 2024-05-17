@@ -2,14 +2,17 @@
 
 namespace app\controllers;
  
-class HomeController{
+class HomeController {
     
     public function index(){
 
-        print_r('dasda');
-    }
-    public function show(){
+        print_r('controllerr indeeeex');
 
+    }
+    public function show($request){
+
+        var_dump($request->next);
+        echo"show";
         
     }
     public function create(){

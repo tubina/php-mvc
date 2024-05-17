@@ -10,3 +10,4 @@
 - array_values
 - array_filter
 - explode 
+- filter_var($parametro, FILTER_SANITIZE_STRING)
