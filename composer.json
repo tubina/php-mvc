@@ -1,0 +1,15 @@
+{
+    "description": "Php-Mvc",
+    "authors": [
+        {
+            "name":"Felipe Pereira",
+            "email":"felipe.fpp@hotmail.com"
+        }
+    ],
+    "autoload":{
+        "psr-4":{
+            "app\\":"app",
+            "core\\":"core"
+        }
+    }
+}
