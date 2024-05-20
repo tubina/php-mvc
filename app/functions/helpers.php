@@ -1,0 +1,3 @@
+<?php
+
+$teste = "helpers.php";

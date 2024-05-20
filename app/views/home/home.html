@@ -9,5 +9,10 @@
         {{ curso }}
     </p>
     <p>{{ user() }}</p>
-    
+    <p>{{ conexao }}</p>
+    <ul>
+    {% for user in usuarios %}
+        <li>{{ user.name }}</li>
+    {% endfor %}
+    </ul>
 {% endblock %}
